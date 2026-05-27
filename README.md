@@ -4,7 +4,7 @@ A clean, real-time password strength checker built with **Python (Flask)**. The 
 ## ✨ Features
 
 - Real-time strength analysis of your password is available as you type
-- Animated strength meter (red → orange → green) indicates how string your password is 'so far.'
+- Animated strength meter (red → orange → green) indicates how strong your password is 'so far.'
 - 8 criteria checked: length, uppercase, lowercase, digits, special characters, common-password detection
 - Show/hide password toggle is available
 - Fully responsive design
