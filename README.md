@@ -1,6 +1,5 @@
 # 🔐 PassAvengers — Password Strength Checker
-> Built by [Rajanya Maity](https://github.com/Rajanya-Maity)
-A clean, real-time password strength checker built with **Python (Flask)** and a sky-blue + canary-yellow themed frontend. The animated sliding meter shifts from red → orange → green as your password gets stronger.
+A clean, real-time password strength checker built with **Python (Flask)**. The animated sliding meter shifts from red → orange → green as your password gets stronger.
 
 ## ✨ Features
 
