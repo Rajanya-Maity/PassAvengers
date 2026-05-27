@@ -15,7 +15,7 @@ A clean, real-time password strength checker built with **Python (Flask)** and a
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/Rajanya-Maity/PassAvengers.git
-cd password-checker
+cd passwordChecker
 ```
 
 ### 2. Create a virtual environment (recommended)
