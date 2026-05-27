@@ -61,10 +61,10 @@ password-checker/
 
 ## 🛠 Tech Stack
 
-| Layer    | Technology        |
-|----------|-------------------|
-| Backend  | Python 3, Flask   |
-| Frontend | HTML5, CSS3, Vanilla JS |
+|  Layer   |         Technology           |
+|----------|------------------------------|
+| Backend  | Python 3, Flask              |
+| Frontend | HTML5, CSS3, Vanilla JS      |
 | Fonts    | Syne, DM Mono (Google Fonts) |
 
 ## 📜 License
