@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PassAvengers — Password Strength Checker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Floating blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <main class="container">
+
+    <header class="hero">
+      <div class="logo-badge">
+        <span class="lock-icon">🔐</span>
+      </div>
+      <h1>PassAvengers</h1>
+      <p class="tagline">You can never be too careful. But you can definitely determine your password wisely.</p>
+    </header>
+
+    <section class="card">
+
+      <!-- Input area -->
+      <div class="input-group">
+        <label for="password-input" class="input-label">Enter your password</label>
+        <div class="input-wrapper">
+          <input
+            type="password"
+            id="password-input"
+            placeholder="Type a password to analyse…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="toggle-visibility" id="toggle-btn" aria-label="Show/hide password">
+            <svg id="eye-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg id="eye-closed" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Strength meter -->
+      <div class="meter-section">
+        <div class="meter-header">
+          <span class="meter-title">Strength</span>
+          <span class="strength-label" id="strength-label">—</span>
+        </div>
+        <div class="meter-track">
+          <div class="meter-fill" id="meter-fill"></div>
+          <div class="meter-glow" id="meter-glow"></div>
+        </div>
+        <div class="score-display">
+          <span id="score-number">0</span><span class="score-slash">/100</span>
+        </div>
+      </div>
+
+      <!-- Criteria checklist -->
+      <div class="criteria-section">
+        <p class="criteria-heading">Criteria</p>
+        <ul class="criteria-list" id="criteria-list">
+          <!-- populated by JS -->
+        </ul>
+      </div>
+
+    </section>
+
+    <footer class="footer-note">
+      Passwords are <strong>never stored or transmitted</strong> beyond your browser session.
+      <br><br>Built by <strong>Rajanya Maity</strong>
+    </footer>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
