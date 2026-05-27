@@ -11,7 +11,6 @@ A clean, real-time password strength checker built with **Python (Flask)** and a
 - 8 criteria checked: length, uppercase, lowercase, digits, special characters, common-password detection
 - Show/hide password toggle
 - Fully responsive design
-- Sky blue & canary yellow colour scheme
 
 ## 🚀 Getting Started
 
