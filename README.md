@@ -1,6 +1,5 @@
 # 🔐 PassAvengers — Password Strength Checker
 A clean, real-time password strength checker built with **Python (Flask)**. The animated sliding meter shifts from red → orange → green as your password gets stronger.
-**Direct Link to PassAvengers Website:** https://passavengers.onrender.com
 
 ## ✨ Features
 
@@ -40,7 +39,7 @@ python app.py
 ```
 
 ### 5. Open in browser
-Visit: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+Visit: https://passavengers.onrender.com
 
 ## 📁 Project Structure
 
